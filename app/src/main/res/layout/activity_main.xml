@@ -6,41 +6,35 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
-    
+
 
     <TextView
+        android:id="@+id/list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Список"
-        android:id="@+id/list"
+        android:layout_gravity="center"
         android:layout_marginTop="100dp"
-        android:layout_marginLeft="130dp"
-        />
+        android:text="Список" />
 
     <EditText
         android:id="@+id/edit_name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="100dp"
-
-         />
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp" />
 
     <EditText
         android:id="@+id/edit_count"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="120dp"
-        android:layout_marginTop="70dp"
-         />
+        android:layout_gravity="center"
+        android:layout_marginTop="70dp" />
+
     <Button
+        android:id="@+id/Save_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text ="save"
-        android:layout_marginLeft="125dp"
+        android:layout_gravity="center"
         android:layout_marginTop="50dp"
-        android:id="@+id/Save_btn"
-        />
-
-
+        android:text="save" />
 </LinearLayout>

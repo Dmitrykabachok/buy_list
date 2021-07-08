@@ -1,6 +1,5 @@
 package com.example.buylist
 
 interface DatabaseCreateProv {
-    fun getDatabase() : AppDatabase
-
+    fun getDatabase(): AppDatabase
 }
