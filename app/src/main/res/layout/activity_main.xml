@@ -8,27 +8,28 @@
     tools:context=".MainActivity">
 
 
-    <TextView
-        android:id="@+id/list"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:text="Список" />
+        />
+
 
     <EditText
         android:id="@+id/edit_name"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp" />
+        android:layout_marginTop="70dp"
+        android:hint="Name" />
 
     <EditText
         android:id="@+id/edit_count"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="70dp" />
+        android:layout_marginTop="50dp"
+        android:hint="Count" />
 
     <Button
         android:id="@+id/Save_btn"
