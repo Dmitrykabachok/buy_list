@@ -77,13 +77,12 @@ class MainActivity : AppCompatActivity() {
         CoroutineScope(Dispatchers.IO).launch {
             Log.d("DATABASE_ACTIVE", "DELETED")
             db.itemDao().delete(item)
-            val dblist = db.itemDao().getAll()
-            list.clear()
-            dblist.forEach {
-                list.add(it)
+            list.remove(item)
+            withContext(Dispatchers.Main){
+                adapter.deleteData(item)
             }
         }
-        adapter.setData(list)
+
         }
 
 
